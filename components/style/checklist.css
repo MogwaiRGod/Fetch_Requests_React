@@ -1,0 +1,19 @@
+.checkList {
+    margin : 3%;
+}
+
+.task {
+    display: flex;
+    margin: 2% 0;
+}
+
+.task input,
+.task p,
+.task button {
+    padding: 0;
+    margin: 0 2% 0 0 ;
+}
+
+.task button {
+    padding: 0;
+}

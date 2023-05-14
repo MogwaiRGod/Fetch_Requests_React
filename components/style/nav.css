@@ -1,0 +1,13 @@
+#navBar a.active {
+    color: red;
+}
+
+#navBar ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+#navBar ul li {
+    margin: 0 2%;
+}
