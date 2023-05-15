@@ -16,7 +16,7 @@ export default function FetchQuery(props) {
   let name = props.name;
 
   // si une limite a été définie
-  if (props.limit != "null") {
+  if (props.limit != undefined) {
     const limit = props.limit;
 
     // on modifie l'URL passée en argument
@@ -84,6 +84,7 @@ export default function FetchQuery(props) {
       );
     
     case 'DisplayUsers':
+      console.log(url);
       return (
         <div>
           <BaseComponent nameDisplay={ name } loadingStatus={ loading } errorMessage={ error } />
@@ -100,6 +101,7 @@ export default function FetchQuery(props) {
             </thead>
             <tbody>
               {
+                
                 data && data.map(({ id, username, name, email }) => (
                   <tr key={ id }>
                     <td><a href={ `/user/${ id }` }>{ username }</a></td>

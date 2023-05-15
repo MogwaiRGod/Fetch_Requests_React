@@ -10,6 +10,7 @@ import Home from './Home.js';
 import NotFound from './pages/NotFound';
 import Users from './pages/Users';
 import Posts from './pages/Posts';
+import DisplayPosts from './pages/DisplayPosts';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path={"/user/:id"} element={ <Users /> } />
           <Route path="/post/:id" element={ <Posts /> } />
           {/* route vers tous les posts */}
+          <Route path="/posts" element={ <DisplayPosts url='https://jsonplaceholder.typicode.com/posts' /> } />
           {/* route vers tous les users */}
           <Route path="*" element={ <NotFound /> } />
         </Routes>

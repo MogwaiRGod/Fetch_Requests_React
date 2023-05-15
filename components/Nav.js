@@ -12,10 +12,10 @@ export default function Nav() {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/page1">Utilisateurs</NavLink>
+                        <NavLink to="/">Utilisateurs</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/page2">Posts</NavLink>
+                        <NavLink to="/posts">Posts</NavLink>
                     </li>
                 </ul>
             </nav>
